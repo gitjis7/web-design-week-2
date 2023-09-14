@@ -364,7 +364,7 @@
      <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12">
-          <form id="submit-form" action="" class="form-origin text-white" type="post">
+          <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxb1JiCNjh2_uBMMvf8tuOHq8EOZHx-T4tLyVvtX5kY_5RNr9Bi8m20EbUrRsWveSY/exec" action="" class="form-origin text-white" type="post">
             <div class="row">
               <div class="col-lg-6 col-md-12">
                 <div class="mb-3">
@@ -451,7 +451,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxb1JiCNjh2_uBMMvf8tuOHq8EOZHx-T4tLyVvtX5kY_5RNr9Bi8m20EbUrRsWveSY/exec",
+                url:"",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
